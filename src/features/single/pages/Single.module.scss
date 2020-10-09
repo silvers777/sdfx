@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+
+    .img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+
+  .content {
+    width: 100%;
+  }
+}

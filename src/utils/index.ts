@@ -1,0 +1,1 @@
+export { compareName } from './compareName'

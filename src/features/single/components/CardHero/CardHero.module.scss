@@ -1,0 +1,80 @@
+.card {
+  width: 100%;
+  display: flex;
+  .colLeft {
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      display: block;
+      border-bottom: 1px solid #333333;
+    }
+
+    .name {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px;
+    }
+
+    .line {
+      width: 85%;
+      height: 1px;
+      background: #0081fa;
+    }
+
+    .about {
+      width: 100%;
+      padding: 10px;
+      color: #0081fa;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+  .colRight {
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .box {
+      .type {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 25px;
+      }
+      .abilityBox {
+        margin-top: 35px;
+
+        .ability {
+          font-size: 24px;
+          text-decoration: underline;
+          margin-bottom: 15px;
+          font-weight: 600;
+        }
+
+        .list {
+          color: #0081fa;
+          text-transform: uppercase;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .boxBtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .btn {
+        width: 180px;
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+}
