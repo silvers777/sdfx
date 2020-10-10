@@ -1,0 +1,36 @@
+.abilityItem {
+  width: 100%;
+
+  .title {
+    text-align: center;
+    padding: 35px 15px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+
+    .list {
+      width: 100%;
+      padding: 0 35px;
+
+      .item {
+        margin-bottom: 35px;
+      }
+    }
+
+    .boxBtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .btn {
+        width: 180px;
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+}

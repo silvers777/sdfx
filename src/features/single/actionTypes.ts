@@ -1,0 +1,1 @@
+export const FETCH_INFO_ABILITY = 'single/FETCH_INFO_ABILITY'

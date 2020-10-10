@@ -1,23 +1,20 @@
 import { connect, ConnectedProps } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import { ReduxState } from 'store/createRootReducer'
-import * as actions from '../actions'
 import * as selectors from '../selectors'
-import { AboutHero } from '../types'
+import { AboutAbility } from '../types'
 
 type OwnProps = {
-  aboutHero: AboutHero | null
+  abilityDetailed: AboutAbility | null
   loading: boolean
 }
 
 const mapStateToProps = createStructuredSelector<ReduxState, OwnProps>({
-  aboutHero: selectors.aboutHeroSelector,
+  abilityDetailed: selectors.abilityDetailedSelector,
   loading: selectors.loaderSelector,
 })
 
-const mapDispatchToProps = {
-  fetchDetailedAbilityHero: actions.fetchDetailedAbilityHero,
-}
+const mapDispatchToProps = {}
 
 export const connector = connect(mapStateToProps, mapDispatchToProps)
 export type PropsFromRedux = ConnectedProps<typeof connector>

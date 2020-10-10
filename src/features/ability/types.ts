@@ -1,0 +1,32 @@
+/// ////////////////////////////////////////////////////////////////////////////////
+// DATA TYPES
+/// ////////////////////////////////////////////////////////////////////////////////
+
+export type AboutAbility = {
+  effect_changes: []
+  effect_entries: Effect_Entries[]
+  flavor_text_entries: []
+  generation: {}
+  id: number
+  is_main_series: boolean
+  name: string
+  names: []
+  pokemon: []
+}
+
+export type Effect_Entries = {
+  effect: string
+  language: {
+    name: string
+    url: string
+  }
+  short_effect: string
+}
+
+/// ////////////////////////////////////////////////////////////////////////////////
+//  REDUX STATE
+/// ////////////////////////////////////////////////////////////////////////////////
+export type AbilityState = {
+  ability: AboutAbility | null
+  loading: boolean
+}

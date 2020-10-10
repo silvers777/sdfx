@@ -6,7 +6,7 @@ import spinner from 'assets/img/spinner.gif'
 import { CardHero } from '../components'
 
 const Single = (props: PropsFromRedux) => {
-  const { aboutHero, loading } = props
+  const { aboutHero, loading, fetchDetailedAbilityHero } = props
 
   return (
     <div className={styles.container}>
@@ -16,7 +16,7 @@ const Single = (props: PropsFromRedux) => {
         </div>
       ) : (
         <div className={styles.content}>
-          <CardHero aboutHero={aboutHero} />
+          <CardHero aboutHero={aboutHero} fetchDetailedAbilityHero={fetchDetailedAbilityHero} />
         </div>
       )}
     </div>

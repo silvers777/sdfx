@@ -10,6 +10,7 @@ export const Router = () => {
       <Switch>
         <Route path='/' exact component={features.main.pages.Main} />
         <Route path='/pokemon/:id' component={features.single.pages.Single} />
+        <Route path='/ability/:id' component={features.ability.pages.Ability} />
       </Switch>
     </MainLayout>
   )

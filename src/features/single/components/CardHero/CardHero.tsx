@@ -6,13 +6,13 @@ import styles from './CardHero.module.scss'
 
 type Props = {
   aboutHero: AboutHero | null
+  fetchDetailedAbilityHero: (url: string) => void
 }
 
 const CardHero = (props: Props) => {
   const history = useHistory()
-  const { aboutHero } = props
+  const { aboutHero, fetchDetailedAbilityHero } = props
 
-  console.log(aboutHero)
   return (
     <div className={styles.card}>
       <div className={styles.colLeft}>
@@ -30,10 +30,22 @@ const CardHero = (props: Props) => {
         <div className={styles.box}>
           <h3 className={styles.type}>Type: {aboutHero?.types[0].type.name}</h3>
           <div className={styles.abilityBox}>
-            <p className={styles.ability}>Ability:</p>
+            <p className={styles.ability}>Abilities:</p>
             <ul className={styles.list}>
               {aboutHero?.abilities.map((ability, index) => {
-                return <li key={index}>{ability.ability.name}</li>
+                return (
+                  <li
+                    key={index}
+                    className={styles.listItem}
+                    onClick={() => {
+                      fetchDetailedAbilityHero(ability.ability.url)
+                      const url = ability.ability.url.slice(34).replace(/\//, '')
+                      history.push(`/ability/${url}`)
+                    }}
+                  >
+                    {ability.ability.name}
+                  </li>
+                )
               })}
             </ul>
           </div>
