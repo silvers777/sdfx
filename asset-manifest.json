@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sdfx/static/css/main.a1d1704d.chunk.css",
+    "main.js": "/sdfx/static/js/main.b383bba4.chunk.js",
+    "main.js.map": "/sdfx/static/js/main.b383bba4.chunk.js.map",
+    "runtime-main.js": "/sdfx/static/js/runtime-main.4acb8ab9.js",
+    "runtime-main.js.map": "/sdfx/static/js/runtime-main.4acb8ab9.js.map",
+    "static/js/2.b588e581.chunk.js": "/sdfx/static/js/2.b588e581.chunk.js",
+    "static/js/2.b588e581.chunk.js.map": "/sdfx/static/js/2.b588e581.chunk.js.map",
+    "index.html": "/sdfx/index.html",
+    "precache-manifest.f1506e21b8ee396287779aae1ed5af73.js": "/sdfx/precache-manifest.f1506e21b8ee396287779aae1ed5af73.js",
+    "service-worker.js": "/sdfx/service-worker.js",
+    "static/css/main.a1d1704d.chunk.css.map": "/sdfx/static/css/main.a1d1704d.chunk.css.map",
+    "static/js/2.b588e581.chunk.js.LICENSE.txt": "/sdfx/static/js/2.b588e581.chunk.js.LICENSE.txt",
+    "static/media/spinner.gif": "/sdfx/static/media/spinner.d452daac.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4acb8ab9.js",
+    "static/js/2.b588e581.chunk.js",
+    "static/css/main.a1d1704d.chunk.css",
+    "static/js/main.b383bba4.chunk.js"
+  ]
+}
