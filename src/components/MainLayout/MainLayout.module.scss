@@ -78,3 +78,26 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    .header {
+      .container {
+        .title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .main {
+      padding: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    .main {
+      padding: 0px;
+    }
+  }
+}

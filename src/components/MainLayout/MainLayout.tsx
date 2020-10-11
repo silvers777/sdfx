@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { useHistory } from 'react-router'
+import { useHistory, useLocation } from 'react-router'
 
 import styles from './MainLayout.module.scss'
 
@@ -9,8 +9,20 @@ type Props = {
 
 const MainLayout = (props: Props) => {
   const history = useHistory()
+  const { pathname } = useLocation()
   const { children } = props
 
+  const textHeader = () => {
+    if (pathname === '/') {
+      return 'List heros'
+    } else if (pathname.slice(1, 8) === 'pokemon') {
+      return 'About hero'
+    } else if (pathname.slice(1, 8) === 'ability') {
+      return 'List ability'
+    }
+  }
+
+  console.log(pathname.slice(1, 8))
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
@@ -24,7 +36,7 @@ const MainLayout = (props: Props) => {
               Web<span>App</span>
             </p>
           </div>
-          <div className={styles.title}>List Items</div>
+          <div className={styles.title}>{textHeader()}</div>
         </div>
       </header>
       <main className={styles.main}>
