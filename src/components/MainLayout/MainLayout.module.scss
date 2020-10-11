@@ -96,6 +96,13 @@
 
 @media screen and (max-width: 380px) {
   .wrapper {
+    .header {
+      .container {
+        .title {
+          font-size: 1.3rem;
+        }
+      }
+    }
     .main {
       padding: 0px;
     }
